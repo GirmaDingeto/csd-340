@@ -1,2 +1,4 @@
-# csd-340
-CSD340-300O Web Development with HTML and CSS (2265-DD)
+# CSD 340 Web Development with HTML and CSS
+## Contributors
+* Professor Adam Bailey
+* Girma Dingeto
