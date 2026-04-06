@@ -1,0 +1,24 @@
+/* Container styling*/
+#container{
+	margin-top:50px;
+	margin-left:100px;
+	margin-right:100px;
+}
+/* Header styling*/
+h1,h2,h3,h4{
+	background-color:#2c3e50;/* Choose your preferred color*/
+	color:#ffffff;
+	border:1px solid #D6A800;
+	padding:10px;
+}
+/* Link Styling*/
+a{
+color: #2980b9;
+	text-decoration:none;
+}
+a:hover{
+	color:#d35400;
+}
+a:visited {
+color:#8e44ad;
+}
