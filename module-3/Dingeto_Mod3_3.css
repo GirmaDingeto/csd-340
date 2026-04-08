@@ -1,0 +1,63 @@
+
+
+
+/*Center the H1 title */
+h1 {
+    text-align: center;
+}
+
+/*Side-by-side layout */
+.side-by-side  {
+          width: 45%;
+          float: left;
+          margin: 2%;
+}
+
+/*Header and List Font weights */
+h3 {
+   	font-weight: 500;
+
+	width:50%;
+	margin-top:2%;
+   
+}
+
+ol,ul {
+   font-weight: 300;
+}
+
+/*Ordered List styling */
+ol {
+    border: 1px solid red;
+    border-radius: 15px;
+    padding: 10px; 
+    list-style-position:inside;
+}
+
+
+/*Unordered List Styling */
+ul {
+    border: 1px dashed red;
+    border-radius: 15px;
+    padding: 10px;
+    list-style-type: upper-roman;
+    list-style-position: inside;
+}
+
+/*Bottom Div styling */
+#footer-div {
+    width: 100%;
+    margin-top: 60%;
+    float: right;
+    margin-bottom: 20px; 
+    text-align: right;
+}
+
+/*Link Hover Effects */
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
