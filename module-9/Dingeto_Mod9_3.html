@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>CSD 340 Web Development with HTML and CSS</title>
+	<meta name="description" content="CSD 340 Module9.3 Assignment ">
+     <meta charset="UTF-8">
+     <meta name="author" content= "Girma Dingeto">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+	.blank { font-weight:bold;color:blue; text-decoration: underline; }
+	.btn-container { margin-top: 20px;}
+	button { margin-right:10px; padding: 5px 15px; cursor: pointer; }
+	</style>
+	    
+    
+</head>
+	<script>
+		
+
+		// 2. Functions to replace underscores with the variables
+
+		function replaceWord1() {
+			document.getElementById("word1").innerHTML = "extraordinary";
+		}
+		function replaceWord2() {
+			document.getElementById("word2").innerHTML = "Golden Retriever";
+
+		}
+		function replaceWord3() {
+			document.getElementById("word3").innerHTML = "hilarious";
+
+		}
+		function replaceWord4() {
+			document.getElementById("word4").innerHTML = "reminisce";
+		}
+	</script>
+
+<body>
+	<div class="container">
+
+     <!--Documentation: Girma Dingeto - Assignment 9.3-->
+        
+     	<h1> Assignment 9.3: JavaScript-Part1 </h1>
+	<!--3 Paragraphs with 4 span placeholders -->
+	<p>
+		Today started out quite<span id="word1" class="blank"> _________________________ </span>.The weather was so nice to go out.
+		I decided to walk <br>to the park accompanied by my wife, and kids to clear my head and enjoy the fresh air. My kids are busy<br> playing soccer,
+		sliding, swinging, and doing other activities.
+	</p>
+
+	<p>
+		While I was there, I saw a giant <span id="word2" class="blank"> _____________________ </span>
+		chasing a Frisbee.<br>It used different techinques to grab a frisbee andcircle, dodgeand weave instead of bring it back.
+		 It was the most<span id="word3" class="blank">_____________________ </span> thing I saw all week.
+	</p>
+	<p>
+		After an hour of chilling out with my kids and wife, I sat on the bench to take a rest and 
+		started to <span id="word4" class="blank"> _________________ </span>about my upcoming coding <br>assignments and googling 
+		some basic points on my Phone. I started reading some important points which would help me<br> 
+		in doing my assignment, and know more about it, how we do use it in web development.I found JavaScript is getting interesting!
+	</p>
+
+
+	<!--Buttons to trigger the replacement-->
+	  <div class="btn-container">
+	
+		<button type="button" onclick="replaceWord1()">Word 1</button>
+		<button type="button" onclick="replaceWord2()">Word 2</button>
+		<button type="button" onclick="replaceWord3()">Word 3</button>
+		<button type="button" onclick="replaceWord4()">Word 4</button><br>
+	  </div>
+		<a href="../index.html" id="back-link">Back to Landing Page</a>
+   	</div>
+
+</body>
+</html>
+
+
+  
