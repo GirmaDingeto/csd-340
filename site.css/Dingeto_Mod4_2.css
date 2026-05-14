@@ -1,0 +1,49 @@
+/*Center the main heading */
+
+h1 {
+    text-align: center;
+    color: rgba(44, 62, 80, 1);
+   
+}
+
+ /* Grid layout for the gallery */
+
+#image-gallery {
+    display: grid;
+    
+    grid-template-columns: auto auto auto ;
+    gap:0;
+ 
+    margin-top: 10%;
+    
+}
+.container div {
+border: 0.1px solid red;
+font-size: 50px;
+text-align: center
+
+}
+/* Center text for gallery titles*/
+h3{
+	text-align:center;
+	color:rgba(52, 152,219,1);
+
+}
+/* Center the images and captions within the figure */
+figure {
+    text-align: center;
+}
+
+/* Style for the author caption */
+figcaption {
+    font-style: italic;
+    font-size: 0.75em;
+    color: rgba(127, 140, 141, 1);
+}
+
+/*Optimal: styling the back link position and appearance*/
+#back-Link {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
