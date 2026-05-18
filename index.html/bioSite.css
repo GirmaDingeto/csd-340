@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+	font-family:sans-serf; margin:0; padding:0;
+	}
+header {
+  background-color:#AFDFB4;
+  padding: 10px;
+  text-align: center;
+}
+.container {
+	max-width: 1000px;
+	margin: auto;
+	padding: 20px;
+
+}
+/* About-section*/
+.about-section {
+	background:#f4f4f4;
+	padding: 50px 0;
+	text-align: center;
+}
+/* Hobbies-section*/
+.hobby-section {
+	background:#cc99FF;
+	padding: 50px 0;
+	text-align: center;
+}
+
+
+ul.topnav {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: lightgray;
+}
+
+/* Style links in topnav */
+ul.topnav li a {
+  display: block;
+  color: blue;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+ul.topnav li a:hover {
+  background-color: #dddddd;
+  color: black;
+}
+h1 {
+	color:#003366;
+	font-size: 40px;
+}
+
+h2 {
+	color:#003366;
+	font-size: 40px;
+}
+
+p {
+	line-height:1.6;
+	font-size:18px;
+}
+
+/*Simple layout styling*/
+section {
+	padding:40px;
+	line-height:1.6;
+	font-family:sans-serf;
+}
+#home {
+	background-color:#f4f4f4;
+	text-align: center;
+}
+#About {
+	background-color:#FFFF66;
+	text-align: left;
+}
+#Hobby {
+	background-color:#cc99FF;
+	text-align: center;
+}
+
+.gallery-images img {
+max-width: 500px;
+height:auto;}
+h2{
+	color: #2c3e50;
+	border-bottom:2px solid #e67e22;
+	display: inline-block;
+}
+div.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
+div.flex-container > div {
+  margin: 10px;
+}
+
+/* Style the footer */
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f1f1f1;
+  padding: 8px;
+  text-align: center;
+  z-index: 1000;
+}
+
+/* Use media query and show the flex items vertically if screen width is less than 600px */
+@media screen and (max-width:600px) {
+  div.flex-container {
+    flex-direction: column;
+  }
+}
+
