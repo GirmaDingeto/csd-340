@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSD 340 Web Development with HTML and CSS</title>
+	
+<body>
+
+	<h1>Assignment 10.3: JavaScript-part 2</h1>
+	<p>Click on an image below to trigger a change on the page.</p>
+
+	<div class="gallery">
+    <script>
+      function displayImage(imageFile){
+        var largerImage = document.getElementById("mainImage");
+        var newNode = document.createElement("img");
+        newNode.id = "mainImage";
+        newNode.src = imageFile;
+        newNode.alt = "Large Image";
+        newNode.className = "mainImage";
+        newNode.style.width = "100px";
+        newNode.style.height = "100px";
+        largerImage.parentNode.replaceChild(newNode, largerImage);
+        
+      }
+    </script>
+
+    <link rel='stylesheet' type='text/css' href='body1.css' />
+
+  </head>
+
+  <body>
+    <br />
+    <div>
+      <a href=#
+         onmouseover="nature.src='nature_01.jpg';"
+         onmouseout= "nature.src='nature_02.jpg';"
+      >
+        <img border = 0 name = "nature" src = "nature_02.jpg">
+      </a>
+    </div>
+    <br />
+    <div
+         onmouseover="this.style.color='red';"
+         onmouseout= "this.style.color='black';">
+
+      Run your mouse over the image to change.
+      <br />
+
+    </div>
+    <div>
+      <a href=#
+         onmouseover="flower.src='flower_01.jpg';"
+         onmouseout= "flowe.src='flower_02.jpg';"
+      >
+        <img border = 0 name = "flower" src = "flower_02.jpg">
+      </a>
+    </div>
+    <br />
+    <div
+         onmouseover="this.style.color='red';"
+         onmouseout= "this.style.color='black';">
+
+      Run your mouse over the image to change.
+      <br />
+      Right-click and select View Source for more details.
+
+    </div>
+    <a href="../index.html" id="back-link">Back to Landing Page</a>
+
+</head>
+
+</body>
+</html>
