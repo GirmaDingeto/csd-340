@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CSD 340 Web Developmentwith HTML and CSS</title>
+	<style>
+		body {
+			font-family:Arial. sans-serif;
+			margin: 40px;
+			background-color: #f4f6f9;
+			color: #333;
+		}
+		.container {
+			background-color: #fff;
+			padding: 30px;
+			border-radius: 8px;
+			box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+			max-width: 500px;
+		}
+		h1 {
+			color:#2c3e50;
+			font-size: 24px;
+			border-bottom: 2px solid #ecf0f1;
+			padding-bottom: 10px;
+		}
+		.instructions {
+			font-style: italic;
+			color: #7f8c8d;
+			margin-bottom: 20px;
+		}
+		.input-area {
+			margin-bottom: 20px;
+		}
+		input[type="text"] {
+			width: 100%;
+			padding 10px;
+			box-sizing: border-box;
+			border: 1px solid #bdc3c7;
+			border-radius: 4px;
+			margin-bottom: 10px;
+			font-size: 16px;
+		}
+		.button-group {
+			display: flex;
+			gap 10px;
+			margin-bottom:20px;
+		button {
+			flex: 1;
+			padding: 10px;
+			border: none;
+			border-radius: 4px;
+			color: white;
+			font-weight: bold;
+			cursor: pointer;
+			font-size: 14px;
+			transition background 0.2s;
+		}
+		.btn-add {background-color: #2ecc71;}
+		.btn-add:hover {background-color:#27ae60; }
+		.btn-delete {background-color:#e74c3c; }
+		.btn-delete:hover {background-color:#c0392b; }
+		.btn-sort {background-color:#3498db; }
+		.btn-sort:hover {background-color:#2980b9; }
+		
+		h2 {
+			font-size: 20px;
+			color:#34495e;
+		}
+		ol {
+			padding-left: 20px;
+			line-height: 1.6;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="container">
+		<h1>Assignment 11.2 JavaScript - part 3</h1>
+		
+		<p class="instructions">
+		Instructions: Type a task into the text box below and click "Add" to build your list.
+		Use "Sort" to alphabetize your tasks, or "Delete Last Entery" to remove the most recent item.
+		</p>
+		
+		<div class="input-aera">
+			<input type="text" id="taskInput"placeholder="Enter a new task here...">	
+		</div>
+		
+		<div class="button-group">
+			<button class="btn-add" onclick="addItem()">Add</button>
+			<button class="btn-delete" onclick="deleteLast Item()"> Delete Last Entry</button>
+			<button class="btn-sort" onclick="sortItems()">Sort</button>
+		</div>
+
+		<h2>My To-Do List:</h2>
+		<div id="todolistdisplay">
+		<!--The list will appear here-->
+		</div>
+	</div>
+	
+	<script>
+		// 1. Global array to store the to-do list items
+		let toDoList=[];
+	
+		//2. Function to add an element to the array
+		function addItem() {
+			let inputField = document.getElementById("taskInput");
+			let taskValue = inputField.value.trim();
+			
+			if (task === "") {
+				toDoList.push(taskValue);
+				alert("Added task: " + taskValue);
+				
+				inputField.value = ""; // Clear input field
+				displaytasks();
+			} else {
+				alert("Please enter a task first");
+				return;
+			}
+		}
+		
+		// 3. Function to delete the last element in the array
+		function deleteLastItem() {
+			if (toDolist.length === 0) {
+				alert("The list is already empty!");
+				return;
+			}
+				let deletedItem = toDoList.pop();
+				alert("Deleted task: " + deletedItem);
+				displayList();
+			} 
+		
+		// 4. Function to sort the array
+		function sortItems() {
+			if (toDoList.length ===0) {
+				alert("The list is empty. Nothing to sort.");
+					return;
+			}
+			
+			toDoList.sort();
+			alert.("The list has been sorted alphabetically.");
+			displayTasks();
+		} 
+			
+		// 5. Function to display the contents of the array
+		function displayList() {
+			let displaydiv = document.getElementById("todoDisplay");
+		
+			if (toDoList.length === 0) {
+				displayDiv.innerHTML = "<p>No tasks added yet.</p>";
+				return;
+		}
+		
+		let htmlOutput = "<ol>";
+		for (let i = 0; i < toDoList.length; i++) {
+			htmlOutput +="<li>" + toDoList[i] + "</li>";
+		}
+		htmlOutput += "</ol>";
+		
+		displayDiv.innerHTML = htmlOutput;
+	}
+	
+	// Initialize empty display on load
+	displayTasks();
+</script>
+<p><a href="../index.html" id="back-link">Back to Landing Page</a></p>
+</body>
+<html>
